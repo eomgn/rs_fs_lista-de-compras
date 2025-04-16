@@ -25,6 +25,18 @@
   padding-block: var(--py-xl);
 }
 
+.desktop-only {
+  display: none;
+}
+
+.grid {
+  display: grid;
+}
+
+.gap-6 {
+  gap: 6px;
+}
+
 .flex {
   display: flex;
 }
@@ -36,5 +48,9 @@
 @media (width >= 80em) {
   .container {
     --max-width: 1280px; /* 80em * 16px = 1280px */
+  }
+
+  .desktop-only {
+    display: initial;
   }
 }

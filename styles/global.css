@@ -49,7 +49,7 @@
   --py-base: 1rem; /* 16px */
   --py-md: 2rem; /* 32px */
   --py-lg: 2.25rem; /* 36px */
-  --py-xl: 2.75rem; /* 32px */
+  --py-xl: 2.75rem; /* 44px */
 }
 
 html {
@@ -65,8 +65,13 @@ body {
   background-color: var(--background-primary);
 }
 
-h1 {
+.title {
   font-size: var(--fs-xl);
+  font-weight: var(--fw-bold);
+}
+
+.link {
+  font-size: var(--fs-sm);
 }
 
 /* removendo propriedades padrão de lista, porem somente quando o ul tiver o atributo role="list" (role é usado para trabalhar com acessibilidade) -> isso porque quando é removido de uma lista o seu estilo, é então perdido pelos navegadores o entendimento de que o ul/li é uma lista */
@@ -78,4 +83,9 @@ ul[role="list"] {
 img {
   max-width: 100%;
   display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: var(--content-primary);
 }

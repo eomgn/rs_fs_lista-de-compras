@@ -1,0 +1,35 @@
+header {
+  margin-top: 1.5625rem;
+  text-align: center;
+
+  img {
+    margin-bottom: 3.875rem;
+  }
+
+  .title-page {
+    text-align: start;
+
+    a {
+      display: inline-flex;
+      gap: 6px;
+
+      color: var(--color-brand);
+
+      &::before {
+        content: "";
+        background-image: url(../assets/icons/arrow.svg);
+        background-position: contain;
+        width: 20px;
+        height: 20px;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    h1 {
+      padding-block: 1rem 2.75rem;
+    }
+  }
+}
