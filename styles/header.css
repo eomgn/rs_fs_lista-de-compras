@@ -2,16 +2,14 @@ header {
   margin-top: 1.5625rem;
   text-align: center;
 
-  img {
-    margin-bottom: 3.875rem;
-  }
-
   .title-page {
     text-align: start;
 
     a {
       display: inline-flex;
       gap: 6px;
+
+      padding-block: 62px 16px;
 
       color: var(--color-brand);
 
@@ -26,10 +24,6 @@ header {
       &:hover {
         text-decoration: underline;
       }
-    }
-
-    h1 {
-      padding-block: 1rem 2.75rem;
     }
   }
 }
