@@ -1,0 +1,81 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+
+  /* suavização das fontes */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+:root {
+  /* colors */
+  --background-primary: #f4f5fb;
+  --background-secondary: #ffffff;
+  --color-brand: #ca3884;
+  --color-brand-hover: #a52c6b;
+  --color-danger: #c93847;
+  --content-primary: #080b12;
+  --content-secondary: #374151;
+  --content-tertiary: #9ca3af;
+  --always-white: #ffffff;
+  --border-primary: #d1d5db;
+  --border-hover: #b9c2d0;
+
+  /* font-family */
+  --ff-sans: "Inter", system-ui, sans-serif;
+
+  /* font-weight */
+  --fw-base: 400;
+  --fw-md: 500;
+  --fw-bold: 800;
+
+  /* font-size */
+  --fs-sm: 0.875rem; /* 14px - link */
+  --fs-base: 1rem; /* 16px - base/paragraph */
+  --fs-xl: 1.5rem; /* 24px - h2 */
+
+  /* padding - X */
+  --px-lg: 2rem; /* 32px */
+
+  /* padding - Y */
+  --py-sm: 0.75rem; /* 12px */
+  --py-base: 1rem; /* 16px */
+  --py-md: 2rem; /* 32px */
+  --py-lg: 2.25rem; /* 36px */
+  --py-xl: 2.75rem; /* 32px */
+}
+
+html {
+  font-family: var(--ff-sans);
+  font-weight: var(--fw-base);
+  font-size: var(--fs-base);
+  line-height: 20px;
+
+  color: var(--content-primary);
+}
+
+body {
+  background-color: var(--background-primary);
+}
+
+h1 {
+  font-size: var(--fs-xl);
+}
+
+/* removendo propriedades padrão de lista, porem somente quando o ul tiver o atributo role="list" (role é usado para trabalhar com acessibilidade) -> isso porque quando é removido de uma lista o seu estilo, é então perdido pelos navegadores o entendimento de que o ul/li é uma lista */
+ul[role="list"] {
+  list-style: none;
+}
+
+/* definindo largura e display de cada imagem por padrão */
+img {
+  max-width: 100%;
+  display: inline-block;
+}

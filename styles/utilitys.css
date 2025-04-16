@@ -1,0 +1,40 @@
+.container {
+  --max-width: 327px;
+
+  margin-inline: auto;
+  width: min(var(--max-width), 100% - var(--px-lg) * 2);
+}
+
+.py-base {
+  padding-block: var(--py-base);
+}
+
+.py-sm {
+  padding-block: var(--py-sm);
+}
+
+.py-md {
+  padding-block: var(--py-md);
+}
+
+.py-lg {
+  padding-block: var(--py-lg);
+}
+
+.py-xl {
+  padding-block: var(--py-xl);
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+@media (width >= 80em) {
+  .container {
+    --max-width: 1280px; /* 80em * 16px = 1280px */
+  }
+}
