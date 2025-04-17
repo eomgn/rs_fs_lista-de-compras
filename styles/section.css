@@ -36,10 +36,18 @@
           background-size: 120%;
           background-position: center;
         }
+
+        &:checked + span {
+          text-decoration: line-through;
+        }
       }
 
       & span {
         color: var(--content-secondary);
+
+        &:has(input:checked) {
+          text-decoration: underline;
+        }
       }
 
       & button {
