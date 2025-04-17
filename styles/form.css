@@ -1,0 +1,24 @@
+form {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* width: 100%; */
+  margin-block: 2.75rem 2.5rem;
+
+  .input-wrapper {
+    width: 100%;
+  }
+
+  .button-wrapper {
+    width: 100%;
+  }
+}
+
+@media (width >= 39.1875em) {
+  .input-wrapper {
+    flex: 2.5;
+  }
+
+  .button-wrapper {
+    flex: 1;
+  }
+}

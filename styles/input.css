@@ -1,0 +1,23 @@
+input {
+  width: 100%;
+  padding: 0.6875rem 1.125rem;
+  border-radius: 0.75rem;
+  border: 2px solid var(--border-primary);
+  outline: none;
+
+  &:hover {
+    border: 2px solid var(--border-hover);
+  }
+
+  &:focus {
+    border: 2px solid var(--color-brand);
+  }
+
+  &::placeholder {
+    color: var(--content-tertiary);
+  }
+
+  &:focus::placeholder {
+    color: var(--content-primary);
+  }
+}

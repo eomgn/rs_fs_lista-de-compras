@@ -37,17 +37,28 @@
   gap: 6px;
 }
 
+.gap-16 {
+  gap: 16px;
+}
+
 .flex {
   display: flex;
 }
 
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
 .items-center {
   align-items: center;
 }
 
-@media (width >= 80em) {
+@media (width >= 39.1875em) {
   .container {
-    --max-width: 1280px; /* 80em * 16px = 1280px */
+    --max-width: 627px; /* 39.1875em * 16px = 627px */
   }
 
   .desktop-only {
